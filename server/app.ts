@@ -1,9 +1,9 @@
-import { Application } from "oak/mod.ts";
+import { Application } from "oak";
 import router from "./router.ts";
 
 const app = new Application();
 
-const PORT = Deno.env.get("PORT") || 4000;
+const PORT = Number(Deno.env.get("PORT")) || 4000;
 
 app.use(router.routes());
 app.use(router.allowedMethods());
