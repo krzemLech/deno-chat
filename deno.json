@@ -1,0 +1,15 @@
+{
+  "imports": {
+    "oak/": "https://deno.land/x/oak/"
+  },
+  "fmt": {
+    "useTabs": true,
+    "lineWidth": 120,
+    "indentWidth": 2,
+    "singleQuote": false,
+    "semiColons": true
+  },
+  "tasks": {
+    "dev:server": "deno run --watch --allow-net --allow-write --allow-env ./server/app.ts"
+  }
+}
