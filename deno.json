@@ -10,6 +10,6 @@
     "semiColons": true
   },
   "tasks": {
-    "dev:server": "deno run --watch --allow-net --allow-write --allow-env ./server/app.ts"
+    "dev:server": "deno run --watch --import-map=deno.json --allow-net --allow-write --allow-env ./server/app.ts"
   }
 }
